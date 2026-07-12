@@ -1,0 +1,30 @@
+/* BotPanel — estilos globales
+   Las fuentes (Manrope + Sora) se cargan desde Google Fonts en index.html.
+   El resto del diseño usa estilos en línea dentro del HTML. */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #F4F7F5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Animación del punto/indicador "en vivo" del hero */
+@keyframes bp-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(37, 211, 102, .45); }
+  70%  { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* Suaviza los cambios de fondo en hover (botones y enlaces) */
+[data-hover] {
+  transition: background-color .18s ease, background .18s ease, transform .18s ease;
+}
+
+/* El contenido de cada FAQ se anima al abrir/cerrar */
+.faq-a {
+  transition: opacity .2s ease;
+}

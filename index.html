@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BotPanel — Tu WhatsApp atiende, vende y agenda. Solo.</title>
+  <meta name="description" content="BotPanel: un asistente para WhatsApp que atiende, vende y agenda por ti, 24/7, desde tu número de siempre.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div style="font-family: 'Manrope', system-ui, sans-serif; color: #16241D; background: #F4F7F5; line-height: 1.55; overflow-x: hidden;">
+
+  <!-- ============ HERO ============ -->
+  <section data-screen-label="Hero" style="background: linear-gradient(160deg, #0B1F16 0%, #0E2A1D 55%, #0B241A 100%); color: #F2F7F4; padding: 28px 20px 72px;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 6px 0 40px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div style="width: 36px; height: 36px; border-radius: 10px; background: #25D366; display: grid; place-items: center; color: #07130D; font-family: 'Sora', sans-serif; font-weight: 800; font-size: 18px;">B</div>
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 19px; letter-spacing: -0.01em;">BotPanel</span>
+        </div>
+        <a href="#" data-wa-link target="_blank" style="display: inline-flex; align-items: center; gap: 8px; background: rgba(37,211,102,.12); border: 1px solid rgba(37,211,102,.4); color: #7DEBA8; text-decoration: none; font-weight: 700; font-size: 14px; padding: 9px 16px; border-radius: 999px;" data-hover="background: rgba(37,211,102,.22)">Escríbenos</a>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: center;">
+        <div style="flex: 1 1 420px; min-width: 300px;">
+          <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.12); border-radius: 999px; padding: 6px 14px; font-size: 13px; font-weight: 600; color: #A9D9BC; margin-bottom: 22px;">
+            <span style="width: 8px; height: 8px; border-radius: 50%; background: #25D366; display: inline-block;"></span>
+            Empleado digital con Inteligencia Artificial
+          </div>
+          <h1 style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: clamp(34px, 5.4vw, 58px); line-height: 1.08; letter-spacing: -0.02em; margin: 0 0 20px; text-wrap: pretty;">Tu WhatsApp atiende, vende y agenda. <span style="color: #25D366;">Solo.</span> Las 24 horas.</h1>
+          <p style="font-size: clamp(16px, 2vw, 19px); color: #C4D6CB; margin: 0 0 30px; max-width: 520px; text-wrap: pretty;">Un asistente con Inteligencia Artificial que responde a tus clientes al instante, con tu catálogo, tus precios y tu agenda real. <strong style="color: #F2F7F4;">Te lo entregamos funcionando.</strong></p>
+          <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px;">
+            <a href="#" data-wa-link target="_blank" style="display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: #07130D; text-decoration: none; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 17px; padding: 16px 26px; border-radius: 14px; animation: bp-pulse 2.4s infinite;" data-hover="background: #3BE07A">
+              <span style="font-size: 20px;">💬</span> Pide tu demo gratis con TU negocio
+            </a>
+          </div>
+          <p style="font-size: 13px; color: #8FAE9C; margin: 14px 0 0;">Sin compromiso · Sin tarjeta · Respuesta en minutos</p>
+        </div>
+
+        <!-- Chat mockup VENTA -->
+        <div style="flex: 0 1 360px; min-width: 300px; margin: 0 auto;">
+          <div style="background: #0A1410; border-radius: 28px; padding: 10px; box-shadow: 0 30px 60px rgba(0,0,0,.45), 0 0 0 1px rgba(255,255,255,.08);">
+            <div style="border-radius: 20px; overflow: hidden; background: #E7DFD4;">
+              <div style="background: #075E54; color: #FFF; display: flex; align-items: center; gap: 10px; padding: 12px 14px;">
+                <div style="width: 34px; height: 34px; border-radius: 50%; background: #25D366; display: grid; place-items: center; font-weight: 800; color: #07130D; font-size: 15px;">P</div>
+                <div style="flex: 1;">
+                  <div style="font-weight: 700; font-size: 14px;">Perfumería Aroma</div>
+                  <div style="font-size: 11px; color: #B9E5DC;">en línea · responde al instante</div>
+                </div>
+              </div>
+              <div style="padding: 14px 12px 16px; display: flex; flex-direction: column; gap: 8px; background: repeating-linear-gradient(45deg, #E7DFD4 0, #E7DFD4 12px, #E3DACD 12px, #E3DACD 24px);">
+                <div style="align-self: flex-end; background: #DCF8C6; color: #1B2A20; border-radius: 12px 12px 4px 12px; padding: 8px 12px; max-width: 78%; font-size: 13.5px; box-shadow: 0 1px 1px rgba(0,0,0,.08);">Hola, ¿tienes el 212 VIP de caballero? <span style="font-size: 10px; color: #7A9A85; margin-left: 6px;">21:47 ✓✓</span></div>
+                <div style="align-self: flex-start; background: #FFFFFF; color: #1B2A20; border-radius: 12px 12px 12px 4px; padding: 8px 12px; max-width: 82%; font-size: 13.5px; box-shadow: 0 1px 1px rgba(0,0,0,.08);">¡Hola! 😊 Sí, tenemos el <strong>212 VIP Men de 100&nbsp;ml</strong> a <strong>$78</strong>, original y con entrega hoy mismo. Te mando la foto 👇 <span style="font-size: 10px; color: #9AA7A0; margin-left: 6px;">21:47</span></div>
+                <div style="align-self: flex-start; max-width: 82%; background: #FFFFFF; border-radius: 12px; padding: 6px; box-shadow: 0 1px 1px rgba(0,0,0,.08);">
+                  <div style="height: 110px; border-radius: 8px; background: repeating-linear-gradient(135deg, #DCE7E0 0, #DCE7E0 10px, #CFDED5 10px, #CFDED5 20px); display: grid; place-items: center;">
+                    <span style="font-family: monospace; font-size: 11px; color: #5B7566; background: rgba(255,255,255,.75); padding: 3px 8px; border-radius: 6px;">foto del producto</span>
+                  </div>
+                  <div style="font-size: 12px; color: #4A5C52; padding: 6px 6px 2px;">212 VIP Men · 100 ml · $78</div>
+                </div>
+                <div style="align-self: flex-end; background: #DCF8C6; color: #1B2A20; border-radius: 12px 12px 4px 12px; padding: 8px 12px; max-width: 78%; font-size: 13.5px; box-shadow: 0 1px 1px rgba(0,0,0,.08);">¡Perfecto! Lo quiero 🙌 <span style="font-size: 10px; color: #7A9A85; margin-left: 6px;">21:48 ✓✓</span></div>
+                <div style="align-self: center; background: rgba(11,31,22,.85); color: #7DEBA8; border-radius: 999px; padding: 6px 14px; font-size: 11.5px; font-weight: 700;">🔔 Aviso al dueño: cliente listo para comprar</div>
+              </div>
+            </div>
+          </div>
+          <p style="text-align: center; font-size: 12.5px; color: #8FAE9C; margin: 12px 0 0;">Conversación real de ejemplo · el bot respondió a las 9:47 pm</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. EL DOLOR ============ -->
+  <section data-screen-label="El dolor" style="padding: 72px 20px 24px;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <h2 style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: clamp(26px, 3.6vw, 38px); letter-spacing: -0.02em; margin: 0 0 10px; text-align: center; text-wrap: pretty;">¿Te suena familiar?</h2>
+      <p style="text-align: center; color: #5B6E63; margin: 0 auto 40px; max-width: 560px;">Cada mensaje sin responder es una venta o una cita que se va con la competencia.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 16px; padding: 24px;">
+          <div style="font-size: 26px; margin-bottom: 12px;">🌙</div>
+          <p style="margin: 0; font-weight: 700; font-size: 16.5px; text-wrap: pretty;">¿Cuántas ventas pierdes cuando no puedes contestar?</p>
+          <p style="margin: 8px 0 0; color: #5B6E63; font-size: 14px;">Los mensajes de las 10 pm no esperan hasta mañana.</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 16px; padding: 24px;">
+          <div style="font-size: 26px; margin-bottom: 12px;">📅</div>
+          <p style="margin: 0; font-weight: 700; font-size: 16.5px; text-wrap: pretty;">¿Cuántas citas se te escapan porque nadie respondió a tiempo?</p>
+          <p style="margin: 8px 0 0; color: #5B6E63; font-size: 14px;">El cliente que no recibe respuesta reserva en otro lado.</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 16px; padding: 24px;">
+          <div style="font-size: 26px; margin-bottom: 12px;">📱</div>
+          <p style="margin: 0; font-weight: 700; font-size: 16.5px; text-wrap: pretty;">¿Todo el día pegado al celular respondiendo lo mismo?</p>
+          <p style="margin: 8px 0 0; color: #5B6E63; font-size: 14px;">Precios, horarios, ubicación… una y otra vez.</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 16px; padding: 24px;">
+          <div style="font-size: 26px; margin-bottom: 12px;">🤔</div>
+          <p style="margin: 0; font-weight: 700; font-size: 16.5px; text-wrap: pretty;">¿Sabes qué producto te preguntan más y cuál no se vende?</p>
+          <p style="margin: 8px 0 0; color: #5B6E63; font-size: 14px;">Sin datos, decides a ciegas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. LA SOLUCIÓN ============ -->
+  <section data-screen-label="La solución" style="padding: 72px 20px 32px;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <p style="text-align: center; color: #1FA855; font-weight: 800; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 10px;">La solución</p>
+      <h2 style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: clamp(26px, 3.6vw, 38px); letter-spacing: -0.02em; margin: 0 0 10px; text-align: center; text-wrap: pretty;">Un empleado que nunca duerme, nunca se enferma y nunca olvida un precio</h2>
+      <p style="text-align: center; color: #5B6E63; margin: 0 auto 40px; max-width: 620px;">Todo esto lo hace tu asistente desde el primer día, con tus productos, tus precios y tus horarios reales.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;">
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 16px; padding: 20px 22px; display: flex; gap: 14px;">
+          <div style="font-size: 24px; flex-shrink: 0;">🤖</div>
+          <div><p style="margin: 0; font-weight: 700;">Responde con IA de verdad</p><p style="margin: 4px 0 0; color: #5B6E63; font-size: 14px;">Conversa natural, como una persona. No es un menú de botones.</p></div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 16px; padding: 20px 22px; display: flex; gap: 14px;">
+          <div style="font-size: 24px; flex-shrink: 0;">🎙️</div>
+          <div><p style="margin: 0; font-weight: 700;">Entiende notas de voz</p><p style="margin: 4px 0 0; color: #5B6E63; font-size: 14px;">El cliente manda un audio, el bot lo entiende y responde.</p></div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 16px; padding: 20px 22px; display: flex; gap: 14px;">
+          <div style="font-size: 24px; flex-shrink: 0;">📸</div>
+          <div><p style="margin: 0; font-weight: 700;">Entiende fotos</p><p style="margin: 4px 0 0; color: #5B6E63; font-size: 14px;">El cliente manda la foto de un producto y el bot le dice si lo tienes y el precio.</p></div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 16px; padding: 20px 22px; display: flex; gap: 14px;">
+          <div style="font-size: 24px; flex-shrink: 0;">🖼️</div>
+          <div><p style="margin: 0; font-weight: 700;">Envía fotos y videos</p><p style="margin: 4px 0 0; color: #5B6E63; font-size: 14px;">De tus productos, habitaciones o instalaciones, cuando el cliente pide verlos.</p></div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 16px; padding: 20px 22px; display: flex; gap: 14px;">
+          <div style="font-size: 24px; flex-shrink: 0;">🛒</div>
+          <div><p style="margin: 0; font-weight: 700;">Detecta la venta y te avisa</p><p style="margin: 4px 0 0; color: #5B6E63; font-size: 14px;">Cuando alguien quiere comprar o reservar, te llega el aviso al celular y el chat pasa a modo manual para que tú cierres.</p></div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 16px; padding: 20px 22px; display: flex; gap: 14px;">
+          <div style="font-size: 24px; flex-shrink: 0;">🙋</div>
+          <div><p style="margin: 0; font-weight: 700;">Deriva a un humano cuando toca</p><p style="margin: 4px 0 0; color: #5B6E63; font-size: 14px;">Si el cliente pide hablar con una persona, te lo pasa con aviso y alarma.</p></div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 16px; padding: 20px 22px; display: flex; gap: 14px;">
+          <div style="font-size: 24px; flex-shrink: 0;">🌙</div>
+          <div><p style="margin: 0; font-weight: 700;">Fuera de horario, sigue trabajando</p><p style="margin: 4px 0 0; color: #5B6E63; font-size: 14px;">Informa tu horario y deja el pedido o la cita lista para mañana.</p></div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 16px; padding: 20px 22px; display: flex; gap: 14px;">
+          <div style="font-size: 24px; flex-shrink: 0;">🏷️</div>
+          <div><p style="margin: 0; font-weight: 700;">Etiquetas de colores</p><p style="margin: 4px 0 0; color: #5B6E63; font-size: 14px;">Organiza tus chats como WhatsApp Business, pero mejor.</p></div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 16px; padding: 20px 22px; display: flex; gap: 14px;">
+          <div style="font-size: 24px; flex-shrink: 0;">⚙️</div>
+          <div><p style="margin: 0; font-weight: 700;">Dos modos según tu negocio</p><p style="margin: 4px 0 0; color: #5B6E63; font-size: 14px;">Modo <strong>VENTA</strong> para tiendas o modo <strong>CITAS</strong> con agenda. Se configura según lo que necesitas.</p></div>
+        </div>
+      </div>
+
+      <!-- Highlight: AGENDA + chat mockup CITA -->
+      <div style="margin-top: 40px; background: #0B1F16; color: #F2F7F4; border-radius: 24px; padding: clamp(24px, 4vw, 48px); display: flex; flex-wrap: wrap; gap: 40px; align-items: center;">
+        <div style="flex: 1 1 380px; min-width: 280px;">
+          <div style="display: inline-block; background: rgba(37,211,102,.14); border: 1px solid rgba(37,211,102,.4); color: #7DEBA8; border-radius: 999px; padding: 6px 14px; font-size: 13px; font-weight: 700; margin-bottom: 18px;">📅 El favorito de hoteles, clínicas y barberías</div>
+          <h3 style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: clamp(24px, 3vw, 34px); letter-spacing: -0.02em; margin: 0 0 14px; text-wrap: pretty;">Agenda citas y reservas. Solo.</h3>
+          <p style="color: #C4D6CB; margin: 0 0 18px; text-wrap: pretty;">El bot ofrece únicamente <strong style="color: #F2F7F4;">tus horarios disponibles</strong>, registra la cita y te la deja lista para confirmar. Nada de dobles reservas ni horarios inventados.</p>
+          <ul style="margin: 0; padding: 0 0 0 2px; list-style: none; color: #C4D6CB; font-size: 15px; display: grid; gap: 10px;">
+            <li style="display: flex; gap: 10px;"><span style="color: #25D366; font-weight: 800;">✓</span> Hoteles: responde disponibilidad y toma la reserva</li>
+            <li style="display: flex; gap: 10px;"><span style="color: #25D366; font-weight: 800;">✓</span> Centros médicos y consultorios: agenda pacientes</li>
+            <li style="display: flex; gap: 10px;"><span style="color: #25D366; font-weight: 800;">✓</span> Barberías, spas y salones: los clientes reservan solos</li>
+          </ul>
+        </div>
+        <div style="flex: 0 1 340px; min-width: 290px; margin: 0 auto;">
+          <div style="border-radius: 20px; overflow: hidden; background: #E7DFD4; box-shadow: 0 20px 50px rgba(0,0,0,.4);">
+            <div style="background: #075E54; color: #FFF; display: flex; align-items: center; gap: 10px; padding: 12px 14px;">
+              <div style="width: 34px; height: 34px; border-radius: 50%; background: #25D366; display: grid; place-items: center; font-weight: 800; color: #07130D; font-size: 15px;">S</div>
+              <div style="flex: 1;">
+                <div style="font-weight: 700; font-size: 14px;">Centro Médico Sonría</div>
+                <div style="font-size: 11px; color: #B9E5DC;">en línea · responde al instante</div>
+              </div>
+            </div>
+            <div style="padding: 14px 12px 16px; display: flex; flex-direction: column; gap: 8px; background: repeating-linear-gradient(45deg, #E7DFD4 0, #E7DFD4 12px, #E3DACD 12px, #E3DACD 24px);">
+              <div style="align-self: flex-end; background: #DCF8C6; color: #1B2A20; border-radius: 12px 12px 4px 12px; padding: 8px 12px; max-width: 78%; font-size: 13.5px; box-shadow: 0 1px 1px rgba(0,0,0,.08);">Hola, quiero una cita para mañana <span style="font-size: 10px; color: #7A9A85; margin-left: 6px;">22:15 ✓✓</span></div>
+              <div style="align-self: flex-start; background: #FFFFFF; color: #1B2A20; border-radius: 12px 12px 12px 4px; padding: 8px 12px; max-width: 84%; font-size: 13.5px; box-shadow: 0 1px 1px rgba(0,0,0,.08);">¡Con gusto! Para mañana tengo disponible:<br>🕘 <strong>9:30 am</strong><br>🕚 <strong>11:00 am</strong><br>🕓 <strong>4:15 pm</strong><br>¿Cuál le queda mejor? <span style="font-size: 10px; color: #9AA7A0; margin-left: 6px;">22:15</span></div>
+              <div style="align-self: flex-end; background: #DCF8C6; color: #1B2A20; border-radius: 12px 12px 4px 12px; padding: 8px 12px; max-width: 78%; font-size: 13.5px; box-shadow: 0 1px 1px rgba(0,0,0,.08);">A las 9:30 está perfecto <span style="font-size: 10px; color: #7A9A85; margin-left: 6px;">22:16 ✓✓</span></div>
+              <div style="align-self: flex-start; background: #FFFFFF; color: #1B2A20; border-radius: 12px 12px 12px 4px; padding: 8px 12px; max-width: 84%; font-size: 13.5px; box-shadow: 0 1px 1px rgba(0,0,0,.08);">✅ Listo, quedó agendada su cita para <strong>mañana 9:30 am</strong> a nombre de María. Le llegará un recordatorio. ¡Que descanse! <span style="font-size: 10px; color: #9AA7A0; margin-left: 6px;">22:16</span></div>
+              <div style="align-self: center; background: rgba(11,31,22,.85); color: #7DEBA8; border-radius: 999px; padding: 6px 14px; font-size: 11.5px; font-weight: 700;">📅 Nueva cita en tu agenda · lista para confirmar</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. REPORTES ============ -->
+  <section data-screen-label="Reportes" style="padding: 72px 20px 32px;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px; align-items: center;">
+      <div style="flex: 1 1 400px; min-width: 300px;">
+        <p style="color: #1FA855; font-weight: 800; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 10px;">Reportes a tu celular</p>
+        <h2 style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: clamp(26px, 3.6vw, 38px); letter-spacing: -0.02em; margin: 0 0 16px; text-wrap: pretty;">Tu negocio te rinde cuentas por WhatsApp</h2>
+        <p style="color: #5B6E63; margin: 0 0 20px; text-wrap: pretty;">Escríbele al bot desde <strong style="color: #16241D;">tu número</strong> y recibe al instante:</p>
+        <ul style="margin: 0 0 28px; padding: 0; list-style: none; display: grid; gap: 10px; font-size: 15.5px;">
+          <li style="display: flex; gap: 10px;"><span style="color: #1FA855; font-weight: 800;">✓</span> Ventas del día, la semana o el mes</li>
+          <li style="display: flex; gap: 10px;"><span style="color: #1FA855; font-weight: 800;">✓</span> Productos top y productos sin movimiento</li>
+          <li style="display: flex; gap: 10px;"><span style="color: #1FA855; font-weight: 800;">✓</span> Comparación contra el periodo anterior</li>
+          <li style="display: flex; gap: 10px;"><span style="color: #1FA855; font-weight: 800;">✓</span> Clientes frecuentes, stock bajo y pedidos pendientes</li>
+        </ul>
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 16px; padding: 22px 24px;">
+          <p style="margin: 0 0 8px; font-weight: 800; font-family: 'Sora', sans-serif; font-size: 16px;">🖥️ Y además, un panel web con todo</p>
+          <p style="margin: 0; color: #5B6E63; font-size: 14.5px; text-wrap: pretty;">Conversaciones en vivo · agenda de citas · directorio de clientes (nuevos, frecuentes, inactivos) · clientes perdidos y por qué · exportar a Excel los clientes con tiempo sin escribir, para reactivarlos · registro de ventas · alertas de stock agotado, día sin ventas o cliente en riesgo.</p>
+        </div>
+      </div>
+
+      <!-- Chat mockup REPORTE -->
+      <div style="flex: 0 1 340px; min-width: 290px; margin: 0 auto;">
+        <div style="border-radius: 20px; overflow: hidden; background: #E7DFD4; box-shadow: 0 20px 50px rgba(16,42,29,.18); border: 1px solid #DCD2C3;">
+          <div style="background: #075E54; color: #FFF; display: flex; align-items: center; gap: 10px; padding: 12px 14px;">
+            <div style="width: 34px; height: 34px; border-radius: 50%; background: #25D366; display: grid; place-items: center; font-weight: 800; color: #07130D; font-size: 15px;">B</div>
+            <div style="flex: 1;">
+              <div style="font-weight: 700; font-size: 14px;">Mi asistente 🤖</div>
+              <div style="font-size: 11px; color: #B9E5DC;">solo tú puedes pedirle reportes</div>
+            </div>
+          </div>
+          <div style="padding: 14px 12px 16px; display: flex; flex-direction: column; gap: 8px; background: repeating-linear-gradient(45deg, #E7DFD4 0, #E7DFD4 12px, #E3DACD 12px, #E3DACD 24px);">
+            <div style="align-self: flex-end; background: #DCF8C6; color: #1B2A20; border-radius: 12px 12px 4px 12px; padding: 8px 12px; max-width: 70%; font-size: 13.5px; box-shadow: 0 1px 1px rgba(0,0,0,.08);">¿Cómo vamos hoy? <span style="font-size: 10px; color: #7A9A85; margin-left: 6px;">18:02 ✓✓</span></div>
+            <div style="align-self: flex-start; background: #FFFFFF; color: #1B2A20; border-radius: 12px 12px 12px 4px; padding: 10px 14px; max-width: 88%; font-size: 13.5px; box-shadow: 0 1px 1px rgba(0,0,0,.08);">📊 <strong>Resumen de hoy</strong><br>💵 Ventas: <strong>$412</strong> (▲ 18% vs ayer)<br>🥇 Top: filtro de agua 3 etapas (5)<br>📦 Stock bajo: repuesto de membrana (2)<br>📅 Citas de mañana: <strong>6 agendadas</strong><br>🔔 2 pedidos pendientes de confirmar <span style="font-size: 10px; color: #9AA7A0; margin-left: 6px;">18:02</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. CÓMO FUNCIONA ============ -->
+  <section data-screen-label="Cómo funciona" style="padding: 72px 20px 32px;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <h2 style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: clamp(26px, 3.6vw, 38px); letter-spacing: -0.02em; margin: 0 0 10px; text-align: center;">Así de simple</h2>
+      <p style="text-align: center; color: #5B6E63; margin: 0 auto 40px; max-width: 520px;">Tú no construyes nada. Nosotros lo dejamos funcionando.</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 18px; padding: 28px 26px;">
+          <div style="width: 42px; height: 42px; border-radius: 12px; background: #E7F8EE; color: #128C4B; display: grid; place-items: center; font-family: 'Sora', sans-serif; font-weight: 800; font-size: 19px; margin-bottom: 16px;">1</div>
+          <p style="margin: 0; font-weight: 700; font-size: 17px;">Nos pasas tu catálogo o tus servicios y horarios</p>
+          <p style="margin: 8px 0 0; color: #5B6E63; font-size: 14.5px;">Fotos, precios, agenda: como lo tengas, nosotros lo ordenamos.</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 18px; padding: 28px 26px;">
+          <div style="width: 42px; height: 42px; border-radius: 12px; background: #E7F8EE; color: #128C4B; display: grid; place-items: center; font-family: 'Sora', sans-serif; font-weight: 800; font-size: 19px; margin-bottom: 16px;">2</div>
+          <p style="margin: 0; font-weight: 700; font-size: 17px;">Te entregamos tu bot funcionando en tu WhatsApp</p>
+          <p style="margin: 8px 0 0; color: #5B6E63; font-size: 14.5px;">En días, no meses. Con tu número de siempre.</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 18px; padding: 28px 26px;">
+          <div style="width: 42px; height: 42px; border-radius: 12px; background: #E7F8EE; color: #128C4B; display: grid; place-items: center; font-family: 'Sora', sans-serif; font-weight: 800; font-size: 19px; margin-bottom: 16px;">3</div>
+          <p style="margin: 0; font-weight: 700; font-size: 17px;">Tú solo cierras ventas y confirmas citas</p>
+          <p style="margin: 8px 0 0; color: #5B6E63; font-size: 14.5px;">El bot hace el resto, las 24 horas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. COMPARATIVA ============ -->
+  <section data-screen-label="Comparativa" style="padding: 72px 20px 32px;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <h2 style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: clamp(26px, 3.6vw, 38px); letter-spacing: -0.02em; margin: 0 0 10px; text-align: center; text-wrap: pretty;">¿Por qué no simplemente otra herramienta?</h2>
+      <p style="text-align: center; color: #5B6E63; margin: 0 auto 36px; max-width: 560px;">Compara sin letra pequeña.</p>
+      <div style="overflow-x: auto; border-radius: 18px; border: 1px solid #E3EAE5; background: #FFFFFF; box-shadow: 0 10px 30px rgba(16,42,29,.06);">
+        <table style="border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14px;">
+          <thead>
+            <tr>
+              <th style="text-align: center; padding: 16px 18px; background: #F7FAF8; border-bottom: 1px solid #E3EAE5; font-weight: 700; color: #5B6E63;"></th>
+              <th style="text-align: center; padding: 16px 18px; background: #0B1F16; color: #7DEBA8; border-bottom: 1px solid #E3EAE5; font-family: 'Sora', sans-serif; font-weight: 800; font-size: 15px;">BotPanel</th>
+              <th style="text-align: center; padding: 16px 18px; background: #F7FAF8; border-bottom: 1px solid #E3EAE5; font-weight: 700; color: #5B6E63;">Kommo (CRM)</th>
+              <th style="text-align: center; padding: 16px 18px; background: #F7FAF8; border-bottom: 1px solid #E3EAE5; font-weight: 700; color: #5B6E63;">WhatChimp y similares</th>
+              <th style="text-align: center; padding: 16px 18px; background: #F7FAF8; border-bottom: 1px solid #E3EAE5; font-weight: 700; color: #5B6E63;">Agencia a medida</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; font-weight: 600;">IA que conversa de verdad</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; background: #F2FBF5; font-weight: 700; color: #128C4B;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 8px;"><path d="M20 6L9 17l-5-5"></path></svg></td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2.5" stroke-linecap="round" style="vertical-align: -2px; margin-right: 8px;"><path d="M18 6L6 18"></path><path d="M6 6l12 12"></path></svg> Flujos de botones</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9940A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2.5px; margin-right: 8px;"><path d="M12 3.5L2.5 20h19L12 3.5z"></path><path d="M12 10v4.5"></path><path d="M12 17.2h.01"></path></svg> Básica</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 8px;"><path d="M20 6L9 17l-5-5"></path></svg></td>
+            </tr>
+            <tr>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; font-weight: 600;">Te lo entregan funcionando</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; background: #F2FBF5; font-weight: 700; color: #128C4B;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 8px;"><path d="M20 6L9 17l-5-5"></path></svg> Incluido</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2.5" stroke-linecap="round" style="vertical-align: -2px; margin-right: 8px;"><path d="M18 6L6 18"></path><path d="M6 6l12 12"></path></svg> Pagas partner $300+</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2.5" stroke-linecap="round" style="vertical-align: -2px; margin-right: 8px;"><path d="M18 6L6 18"></path><path d="M6 6l12 12"></path></svg> Lo armas tú</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 8px;"><path d="M20 6L9 17l-5-5"></path></svg> $1000+</td>
+            </tr>
+            <tr>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; font-weight: 600;">Agenda citas con tus horarios</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; background: #F2FBF5; font-weight: 700; color: #128C4B;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 8px;"><path d="M20 6L9 17l-5-5"></path></svg></td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9940A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2.5px; margin-right: 8px;"><path d="M12 3.5L2.5 20h19L12 3.5z"></path><path d="M12 10v4.5"></path><path d="M12 17.2h.01"></path></svg> Configurándolo tú</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2.5" stroke-linecap="round" style="vertical-align: -2px; margin-right: 8px;"><path d="M18 6L6 18"></path><path d="M6 6l12 12"></path></svg></td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9940A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2.5px; margin-right: 8px;"><path d="M12 3.5L2.5 20h19L12 3.5z"></path><path d="M12 10v4.5"></path><path d="M12 17.2h.01"></path></svg> Extra</td>
+            </tr>
+            <tr>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; font-weight: 600;">Entiende voz y fotos</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; background: #F2FBF5; font-weight: 700; color: #128C4B;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 8px;"><path d="M20 6L9 17l-5-5"></path></svg></td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2.5" stroke-linecap="round" style="vertical-align: -2px; margin-right: 8px;"><path d="M18 6L6 18"></path><path d="M6 6l12 12"></path></svg></td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2.5" stroke-linecap="round" style="vertical-align: -2px; margin-right: 8px;"><path d="M18 6L6 18"></path><path d="M6 6l12 12"></path></svg></td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9940A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2.5px; margin-right: 8px;"><path d="M12 3.5L2.5 20h19L12 3.5z"></path><path d="M12 10v4.5"></path><path d="M12 17.2h.01"></path></svg> Depende</td>
+            </tr>
+            <tr>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; font-weight: 600;">Reportes de ventas a tu WhatsApp</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; background: #F2FBF5; font-weight: 700; color: #128C4B;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 8px;"><path d="M20 6L9 17l-5-5"></path></svg></td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2.5" stroke-linecap="round" style="vertical-align: -2px; margin-right: 8px;"><path d="M18 6L6 18"></path><path d="M6 6l12 12"></path></svg></td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2.5" stroke-linecap="round" style="vertical-align: -2px; margin-right: 8px;"><path d="M18 6L6 18"></path><path d="M6 6l12 12"></path></svg></td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9940A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2.5px; margin-right: 8px;"><path d="M12 3.5L2.5 20h19L12 3.5z"></path><path d="M12 10v4.5"></path><path d="M12 17.2h.01"></path></svg> Extra</td>
+            </tr>
+            <tr>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; font-weight: 600;">Precio por usuario</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; background: #F2FBF5; font-weight: 700; color: #128C4B;">Un solo pago</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;">Pagas por cada empleado</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;">—</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;">—</td>
+            </tr>
+            <tr>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; font-weight: 600;">Mensajes de WhatsApp (Meta)</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; background: #F2FBF5; font-weight: 700; color: #128C4B;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 8px;"><path d="M20 6L9 17l-5-5"></path></svg> Incluidos</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2.5" stroke-linecap="round" style="vertical-align: -2px; margin-right: 8px;"><path d="M18 6L6 18"></path><path d="M6 6l12 12"></path></svg> Aparte</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2.5" stroke-linecap="round" style="vertical-align: -2px; margin-right: 8px;"><path d="M18 6L6 18"></path><path d="M6 6l12 12"></path></svg> Aparte</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2.5" stroke-linecap="round" style="vertical-align: -2px; margin-right: 8px;"><path d="M18 6L6 18"></path><path d="M6 6l12 12"></path></svg> Aparte</td>
+            </tr>
+            <tr>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; font-weight: 600;">Permanencia mínima</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; background: #F2FBF5; font-weight: 700; color: #128C4B;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 8px;"><path d="M20 6L9 17l-5-5"></path></svg> Sin amarres</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2.5" stroke-linecap="round" style="vertical-align: -2px; margin-right: 8px;"><path d="M18 6L6 18"></path><path d="M6 6l12 12"></path></svg> 6 meses</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;">—</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9940A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2.5px; margin-right: 8px;"><path d="M12 3.5L2.5 20h19L12 3.5z"></path><path d="M12 10v4.5"></path><path d="M12 17.2h.01"></path></svg> Contratos</td>
+            </tr>
+            <tr>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; font-weight: 600;">Soporte en español, directo</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; background: #F2FBF5; font-weight: 700; color: #128C4B;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 8px;"><path d="M20 6L9 17l-5-5"></path></svg> Por WhatsApp</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9940A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2.5px; margin-right: 8px;"><path d="M12 3.5L2.5 20h19L12 3.5z"></path><path d="M12 10v4.5"></path><path d="M12 17.2h.01"></path></svg> Tickets</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9940A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2.5px; margin-right: 8px;"><path d="M12 3.5L2.5 20h19L12 3.5z"></path><path d="M12 10v4.5"></path><path d="M12 17.2h.01"></path></svg> Tickets en inglés</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9940A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2.5px; margin-right: 8px;"><path d="M12 3.5L2.5 20h19L12 3.5z"></path><path d="M12 10v4.5"></path><path d="M12 17.2h.01"></path></svg></td>
+            </tr>
+            <tr>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; font-weight: 600;">Envía fotos y videos de tus productos</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; background: #F2FBF5; font-weight: 700; color: #128C4B;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 8px;"><path d="M20 6L9 17l-5-5"></path></svg> Automático</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2.5" stroke-linecap="round" style="vertical-align: -2px; margin-right: 8px;"><path d="M18 6L6 18"></path><path d="M6 6l12 12"></path></svg></td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9940A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2.5px; margin-right: 8px;"><path d="M12 3.5L2.5 20h19L12 3.5z"></path><path d="M12 10v4.5"></path><path d="M12 17.2h.01"></path></svg> Lo configuras tú</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9940A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2.5px; margin-right: 8px;"><path d="M12 3.5L2.5 20h19L12 3.5z"></path><path d="M12 10v4.5"></path><path d="M12 17.2h.01"></path></svg> Extra</td>
+            </tr>
+            <tr>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; font-weight: 600;">Responde solo con TU catálogo (no inventa precios)</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; background: #F2FBF5; font-weight: 700; color: #128C4B;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 8px;"><path d="M20 6L9 17l-5-5"></path></svg></td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2.5" stroke-linecap="round" style="vertical-align: -2px; margin-right: 8px;"><path d="M18 6L6 18"></path><path d="M6 6l12 12"></path></svg> Flujos fijos</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9940A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2.5px; margin-right: 8px;"><path d="M12 3.5L2.5 20h19L12 3.5z"></path><path d="M12 10v4.5"></path><path d="M12 17.2h.01"></path></svg> Lo armas tú</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 8px;"><path d="M20 6L9 17l-5-5"></path></svg></td>
+            </tr>
+            <tr>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; font-weight: 600;">Te avisa al celular cuando alguien quiere comprar</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; background: #F2FBF5; font-weight: 700; color: #128C4B;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 8px;"><path d="M20 6L9 17l-5-5"></path></svg> Al instante</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9940A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2.5px; margin-right: 8px;"><path d="M12 3.5L2.5 20h19L12 3.5z"></path><path d="M12 10v4.5"></path><path d="M12 17.2h.01"></path></svg> Dentro del CRM</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2.5" stroke-linecap="round" style="vertical-align: -2px; margin-right: 8px;"><path d="M18 6L6 18"></path><path d="M6 6l12 12"></path></svg></td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9940A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2.5px; margin-right: 8px;"><path d="M12 3.5L2.5 20h19L12 3.5z"></path><path d="M12 10v4.5"></path><path d="M12 17.2h.01"></path></svg> Extra</td>
+            </tr>
+            <tr>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; font-weight: 600;">Alertas de stock, ventas y clientes en riesgo</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; background: #F2FBF5; font-weight: 700; color: #128C4B;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 8px;"><path d="M20 6L9 17l-5-5"></path></svg></td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2.5" stroke-linecap="round" style="vertical-align: -2px; margin-right: 8px;"><path d="M18 6L6 18"></path><path d="M6 6l12 12"></path></svg></td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2.5" stroke-linecap="round" style="vertical-align: -2px; margin-right: 8px;"><path d="M18 6L6 18"></path><path d="M6 6l12 12"></path></svg></td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9940A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2.5px; margin-right: 8px;"><path d="M12 3.5L2.5 20h19L12 3.5z"></path><path d="M12 10v4.5"></path><path d="M12 17.2h.01"></path></svg> Extra</td>
+            </tr>
+            <tr>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; font-weight: 600;">Recupera clientes inactivos (lista + Excel)</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; background: #F2FBF5; font-weight: 700; color: #128C4B;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 8px;"><path d="M20 6L9 17l-5-5"></path></svg></td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9940A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2.5px; margin-right: 8px;"><path d="M12 3.5L2.5 20h19L12 3.5z"></path><path d="M12 10v4.5"></path><path d="M12 17.2h.01"></path></svg> Manual</td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D64545" stroke-width="2.5" stroke-linecap="round" style="vertical-align: -2px; margin-right: 8px;"><path d="M18 6L6 18"></path><path d="M6 6l12 12"></path></svg></td>
+              <td style="padding: 13px 18px; border-bottom: 1px solid #EEF3EF; text-align: left; color: #5B6E63;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D9940A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2.5px; margin-right: 8px;"><path d="M12 3.5L2.5 20h19L12 3.5z"></path><path d="M12 10v4.5"></path><path d="M12 17.2h.01"></path></svg> Extra</td>
+            </tr>
+            <tr>
+              <td style="padding: 14px 18px; font-weight: 700; background: #F7FAF8;">Precio mensual real</td>
+              <td style="padding: 14px 18px; text-align: left; background: #E7F8EE; font-weight: 800; color: #128C4B;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -3px; margin-right: 8px;"><path d="M20 6L9 17l-5-5"></path></svg> Desde $49 todo incluido</td>
+              <td style="padding: 14px 18px; text-align: left; color: #5B6E63; background: #F7FAF8; font-size: 13px;">$15–45 por usuario + partner + Meta aparte</td>
+              <td style="padding: 14px 18px; text-align: left; color: #5B6E63; background: #F7FAF8; font-size: 13px;">$12 + lo armas tú + Meta aparte</td>
+              <td style="padding: 14px 18px; text-align: left; color: #5B6E63; background: #F7FAF8; font-size: 13px;">$150–500 + setup $1.000+</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="text-align: center; font-family: 'Sora', sans-serif; font-weight: 700; font-size: clamp(17px, 2.4vw, 21px); color: #16241D; margin: 28px auto 0; max-width: 620px; text-wrap: pretty;">“Las herramientas baratas te venden los ladrillos.<br><span style="color: #128C4B;">Nosotros te entregamos la casa construida.”</span></p>
+    </div>
+  </section>
+
+  <!-- ============ 7. TESTIMONIOS ============ -->
+  <section data-screen-label="Testimonios" style="padding: 72px 20px 32px;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <h2 style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: clamp(26px, 3.6vw, 38px); letter-spacing: -0.02em; margin: 0 0 40px; text-align: center;">Negocios que ya no pierden clientes</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 18px; padding: 26px;">
+          <div style="color: #F5B301; font-size: 15px; letter-spacing: 2px; margin-bottom: 14px;">★★★★★</div>
+          <p style="margin: 0 0 20px; font-size: 15px; color: #33443B; text-wrap: pretty;">“Antes se me pasaban mensajes todo el día. Ahora el bot responde con mi catálogo completo, manda fotos y videos de los productos, y a mí solo me llega el aviso cuando alguien quiere comprar. Hasta los reportes de ventas me llegan a mi WhatsApp.”</p>
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="width: 42px; height: 42px; border-radius: 50%; background: #0E2A1D; color: #7DEBA8; display: grid; place-items: center; font-weight: 800; font-family: 'Sora', sans-serif;">M</div>
+            <div>
+              <p style="margin: 0; font-weight: 700; font-size: 14.5px;">MasPura</p>
+              <p style="margin: 0; color: #5B6E63; font-size: 13px;">Purificación y tratamiento de agua · Manta</p>
+            </div>
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 18px; padding: 26px;">
+          <div style="color: #F5B301; font-size: 15px; letter-spacing: 2px; margin-bottom: 14px;">★★★★★</div>
+          <p style="margin: 0 0 20px; font-size: 15px; color: #33443B; text-wrap: pretty;">“Los clientes agendan solos, incluso de noche. Yo solo confirmo.”</p>
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="width: 42px; height: 42px; border-radius: 50%; background: #0E2A1D; color: #7DEBA8; display: grid; place-items: center; font-weight: 800; font-family: 'Sora', sans-serif;">C</div>
+            <div>
+              <p style="margin: 0; font-weight: 700; font-size: 14.5px;">[Cliente de citas]</p>
+              <p style="margin: 0; color: #5B6E63; font-size: 13px;">Barbería / centro médico · por confirmar</p>
+            </div>
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 18px; padding: 26px;">
+          <div style="color: #F5B301; font-size: 15px; letter-spacing: 2px; margin-bottom: 14px;">★★★★★</div>
+          <p style="margin: 0 0 20px; font-size: 15px; color: #33443B; text-wrap: pretty;">“Es como tener un empleado que nunca duerme y nunca se olvida un precio.”</p>
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="width: 42px; height: 42px; border-radius: 50%; background: #0E2A1D; color: #7DEBA8; display: grid; place-items: center; font-weight: 800; font-family: 'Sora', sans-serif;">T</div>
+            <div>
+              <p style="margin: 0; font-weight: 700; font-size: 14.5px;">[Cliente de tienda]</p>
+              <p style="margin: 0; color: #5B6E63; font-size: 13px;">Tienda · por confirmar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 8. CASOS DE USO ============ -->
+  <section data-screen-label="Casos de uso" style="padding: 72px 20px 32px;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <h2 style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: clamp(26px, 3.6vw, 38px); letter-spacing: -0.02em; margin: 0 0 40px; text-align: center;">Hecho para negocios como el tuyo</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+        <div>
+          <p style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 15px; color: #128C4B; letter-spacing: .06em; text-transform: uppercase; margin: 0 0 14px;">🛒 Ventas</p>
+          <div style="display: grid; gap: 10px;">
+            <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 14px; padding: 16px 18px; display: flex; gap: 12px; align-items: baseline;"><strong style="min-width: 150px;">Perfumería</strong><span style="color: #5B6E63; font-size: 14px;">responde precios y envía fotos</span></div>
+            <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 14px; padding: 16px 18px; display: flex; gap: 12px; align-items: baseline;"><strong style="min-width: 150px;">Purificadora de agua</strong><span style="color: #5B6E63; font-size: 14px;">asesora el equipo correcto</span></div>
+            <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 14px; padding: 16px 18px; display: flex; gap: 12px; align-items: baseline;"><strong style="min-width: 150px;">Tienda / moda</strong><span style="color: #5B6E63; font-size: 14px;">catálogo con fotos y tallas</span></div>
+            <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 14px; padding: 16px 18px; display: flex; gap: 12px; align-items: baseline;"><strong style="min-width: 150px;">Pizzería</strong><span style="color: #5B6E63; font-size: 14px;">toma el pedido completo</span></div>
+          </div>
+        </div>
+        <div>
+          <p style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 15px; color: #128C4B; letter-spacing: .06em; text-transform: uppercase; margin: 0 0 14px;">📅 Citas y reservas</p>
+          <div style="display: grid; gap: 10px;">
+            <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 14px; padding: 16px 18px; display: flex; gap: 12px; align-items: baseline;"><strong style="min-width: 150px;">Hotel</strong><span style="color: #5B6E63; font-size: 14px;">responde disponibilidad y toma la reserva</span></div>
+            <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 14px; padding: 16px 18px; display: flex; gap: 12px; align-items: baseline;"><strong style="min-width: 150px;">Centro médico</strong><span style="color: #5B6E63; font-size: 14px;">agenda pacientes con tus horarios reales</span></div>
+            <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 14px; padding: 16px 18px; display: flex; gap: 12px; align-items: baseline;"><strong style="min-width: 150px;">Barbería / spa</strong><span style="color: #5B6E63; font-size: 14px;">los clientes reservan solos, tú confirmas</span></div>
+            <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 14px; padding: 16px 18px; display: flex; gap: 12px; align-items: baseline;"><strong style="min-width: 150px;">Veterinaria</strong><span style="color: #5B6E63; font-size: 14px;">agenda la consulta y recuerda al dueño</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 9. FAQ ============ -->
+  <section data-screen-label="Preguntas frecuentes" style="padding: 72px 20px 32px;">
+    <div style="max-width: 760px; margin: 0 auto;">
+      <h2 style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: clamp(26px, 3.6vw, 38px); letter-spacing: -0.02em; margin: 0 0 32px; text-align: center;">Preguntas frecuentes</h2>
+      <div style="display: grid; gap: 10px;">
+                  <div class="faq-item" data-open="true" style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 14px; overflow: hidden;">
+            <button class="faq-q" data-hover="background: #F7FAF8" style="all: unset; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 14px; width: 100%; padding: 18px 20px; cursor: pointer; font-family: 'Manrope', sans-serif; font-weight: 700; font-size: 15.5px; color: #16241D;">
+              <span>¿Necesito saber de tecnología?</span>
+              <span class="faq-icon" style="color: #128C4B; font-size: 18px; flex-shrink: 0;">−</span>
+            </button>
+            <p class="faq-a" style="margin: 0; padding: 0 20px 18px; color: #5B6E63; font-size: 14.5px; text-wrap: pretty;">No. Te lo entregamos andando: nosotros cargamos tu catálogo, configuramos el bot y lo dejamos funcionando en tu WhatsApp. Tú solo lo usas.</p>
+          </div>
+          <div class="faq-item" style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 14px; overflow: hidden;">
+            <button class="faq-q" data-hover="background: #F7FAF8" style="all: unset; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 14px; width: 100%; padding: 18px 20px; cursor: pointer; font-family: 'Manrope', sans-serif; font-weight: 700; font-size: 15.5px; color: #16241D;">
+              <span>¿Funciona con mi número actual de WhatsApp?</span>
+              <span class="faq-icon" style="color: #128C4B; font-size: 18px; flex-shrink: 0;">+</span>
+            </button>
+            <p class="faq-a" style="margin: 0; padding: 0 20px 18px; color: #5B6E63; font-size: 14.5px; text-wrap: pretty; display: none;">Sí. El bot atiende desde tu mismo número de siempre; tus clientes no notan ningún cambio.</p>
+          </div>
+          <div class="faq-item" style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 14px; overflow: hidden;">
+            <button class="faq-q" data-hover="background: #F7FAF8" style="all: unset; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 14px; width: 100%; padding: 18px 20px; cursor: pointer; font-family: 'Manrope', sans-serif; font-weight: 700; font-size: 15.5px; color: #16241D;">
+              <span>¿Sirve para mi tipo de negocio?</span>
+              <span class="faq-icon" style="color: #128C4B; font-size: 18px; flex-shrink: 0;">+</span>
+            </button>
+            <p class="faq-a" style="margin: 0; padding: 0 20px 18px; color: #5B6E63; font-size: 14.5px; text-wrap: pretty; display: none;">Sí, tanto para ventas (tiendas, perfumerías, pizzerías) como para citas y reservas (hoteles, clínicas, barberías, spas). Se configura a tu medida.</p>
+          </div>
+          <div class="faq-item" style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 14px; overflow: hidden;">
+            <button class="faq-q" data-hover="background: #F7FAF8" style="all: unset; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 14px; width: 100%; padding: 18px 20px; cursor: pointer; font-family: 'Manrope', sans-serif; font-weight: 700; font-size: 15.5px; color: #16241D;">
+              <span>¿Qué pasa si el bot no sabe algo?</span>
+              <span class="faq-icon" style="color: #128C4B; font-size: 18px; flex-shrink: 0;">+</span>
+            </button>
+            <p class="faq-a" style="margin: 0; padding: 0 20px 18px; color: #5B6E63; font-size: 14.5px; text-wrap: pretty; display: none;">Te deriva el chat y te avisa al instante a tu celular, para que tú lo atiendas en persona. Nunca deja al cliente colgado.</p>
+          </div>
+          <div class="faq-item" style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 14px; overflow: hidden;">
+            <button class="faq-q" data-hover="background: #F7FAF8" style="all: unset; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 14px; width: 100%; padding: 18px 20px; cursor: pointer; font-family: 'Manrope', sans-serif; font-weight: 700; font-size: 15.5px; color: #16241D;">
+              <span>¿El bot inventa precios o citas?</span>
+              <span class="faq-icon" style="color: #128C4B; font-size: 18px; flex-shrink: 0;">+</span>
+            </button>
+            <p class="faq-a" style="margin: 0; padding: 0 20px 18px; color: #5B6E63; font-size: 14.5px; text-wrap: pretty; display: none;">No. Solo usa TU catálogo, TUS horarios y TUS datos. Si algo no está en tu información, no lo inventa: te lo consulta.</p>
+          </div>
+          <div class="faq-item" style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 14px; overflow: hidden;">
+            <button class="faq-q" data-hover="background: #F7FAF8" style="all: unset; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 14px; width: 100%; padding: 18px 20px; cursor: pointer; font-family: 'Manrope', sans-serif; font-weight: 700; font-size: 15.5px; color: #16241D;">
+              <span>¿Hay permanencia?</span>
+              <span class="faq-icon" style="color: #128C4B; font-size: 18px; flex-shrink: 0;">+</span>
+            </button>
+            <p class="faq-a" style="margin: 0; padding: 0 20px 18px; color: #5B6E63; font-size: 14.5px; text-wrap: pretty; display: none;">No. Cancelas cuando quieras, sin amarres ni penalidades.</p>
+          </div>
+          <div class="faq-item" style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 14px; overflow: hidden;">
+            <button class="faq-q" data-hover="background: #F7FAF8" style="all: unset; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 14px; width: 100%; padding: 18px 20px; cursor: pointer; font-family: 'Manrope', sans-serif; font-weight: 700; font-size: 15.5px; color: #16241D;">
+              <span>¿En cuánto tiempo está listo?</span>
+              <span class="faq-icon" style="color: #128C4B; font-size: 18px; flex-shrink: 0;">+</span>
+            </button>
+            <p class="faq-a" style="margin: 0; padding: 0 20px 18px; color: #5B6E63; font-size: 14.5px; text-wrap: pretty; display: none;">En días, no meses. Nos pasas tu catálogo o tus horarios y te entregamos el bot funcionando.</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 10. PRECIOS ============ -->
+  <section data-screen-label="Precios" style="padding: 72px 20px 32px;">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <p style="text-align: center; color: #1FA855; font-weight: 800; font-size: 14px; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 10px;">Precios todo incluido</p>
+      <h2 style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: clamp(26px, 3.6vw, 38px); letter-spacing: -0.02em; margin: 0 0 14px; text-align: center;">Un solo pago al mes. Sin sorpresas.</h2>
+      <div style="margin: 0 0 40px;"></div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; align-items: stretch;">
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 18px; padding: 28px 24px; display: flex; flex-direction: column;">
+          <p style="margin: 0 0 4px; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 16px;">Emprendedor</p>
+          <p style="margin: 0 0 14px; color: #5B6E63; font-size: 13.5px;">Para negocios que empiezan</p>
+          <p style="margin: 0 0 14px;"><span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 40px; letter-spacing: -0.02em;">$49</span><span style="color: #5B6E63; font-size: 14px;">/mes</span></p>
+          <p style="margin: 0 0 14px; color: #33443B; font-size: 14px;">Hasta ~300 clientes atendidos al mes</p>
+          <div style="display: grid; gap: 10px; margin: 0 0 22px; font-size: 13.5px; color: #33443B; text-align: left;">
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Atención 24/7 con IA</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> API Oficial de WhatsApp Business</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Responde texto, notas de voz y fotos</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Catálogo con fotos y videos de productos</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Agenda de citas online</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Automatización de ventas con aviso a tu celular</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Reportes de ventas a tu WhatsApp</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Alertas inteligentes (stock, ventas, clientes en riesgo)</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Gestión de clientes (CRM) + exportar a Excel</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Etiquetas e historial de conversaciones</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Usuarios para tu equipo con permisos</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Soporte técnico directo</div>
+          </div>
+          <a href="#" data-wa-link target="_blank" style="margin-top: auto; display: block; text-align: center; text-decoration: none; border: 1.5px solid #128C4B; color: #128C4B; font-weight: 700; padding: 12px; border-radius: 12px; font-size: 15px;" data-hover="background: #E7F8EE">Empezar</a>
+        </div>
+        <div style="background: #0B1F16; color: #F2F7F4; border: 1px solid #0B1F16; border-radius: 18px; padding: 28px 24px; display: flex; flex-direction: column; position: relative; box-shadow: 0 18px 40px rgba(11,31,22,.25);">
+          <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #25D366; color: #07130D; font-weight: 800; font-size: 12px; letter-spacing: .05em; padding: 5px 14px; border-radius: 999px; white-space: nowrap;">MÁS POPULAR</div>
+          <p style="margin: 0 0 4px; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 16px;">Pequeño</p>
+          <p style="margin: 0 0 14px; color: #A9C4B3; font-size: 13.5px;">El equilibrio perfecto</p>
+          <p style="margin: 0 0 14px;"><span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 40px; letter-spacing: -0.02em;">$99</span><span style="color: #A9C4B3; font-size: 14px;">/mes</span></p>
+          <p style="margin: 0 0 14px; color: #C4D6CB; font-size: 14px;">Hasta ~1.000 clientes atendidos al mes</p>
+          <div style="display: grid; gap: 10px; margin: 0 0 22px; font-size: 13.5px; color: #C4D6CB; text-align: left;">
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Atención 24/7 con IA</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> API Oficial de WhatsApp Business</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Responde texto, notas de voz y fotos</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Catálogo con fotos y videos de productos</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Agenda de citas online</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Automatización de ventas con aviso a tu celular</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Reportes de ventas a tu WhatsApp</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Alertas inteligentes (stock, ventas, clientes en riesgo)</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Gestión de clientes (CRM) + exportar a Excel</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Etiquetas e historial de conversaciones</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Usuarios para tu equipo con permisos</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Soporte técnico directo</div>
+          </div>
+          <a href="#" data-wa-link target="_blank" style="margin-top: auto; display: block; text-align: center; text-decoration: none; background: #25D366; color: #07130D; font-weight: 800; padding: 12px; border-radius: 12px; font-size: 15px;" data-hover="background: #3BE07A">Empezar</a>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 18px; padding: 28px 24px; display: flex; flex-direction: column;">
+          <p style="margin: 0 0 4px; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 16px;">Mediano</p>
+          <p style="margin: 0 0 14px; color: #5B6E63; font-size: 13.5px;">Para negocios en crecimiento</p>
+          <p style="margin: 0 0 14px;"><span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 40px; letter-spacing: -0.02em;">$199</span><span style="color: #5B6E63; font-size: 14px;">/mes</span></p>
+          <p style="margin: 0 0 14px; color: #33443B; font-size: 14px;">Hasta ~3.000 clientes atendidos al mes</p>
+          <div style="display: grid; gap: 10px; margin: 0 0 22px; font-size: 13.5px; color: #33443B; text-align: left;">
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Atención 24/7 con IA</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> API Oficial de WhatsApp Business</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Responde texto, notas de voz y fotos</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Catálogo con fotos y videos de productos</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Agenda de citas online</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Automatización de ventas con aviso a tu celular</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Reportes de ventas a tu WhatsApp</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Alertas inteligentes (stock, ventas, clientes en riesgo)</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Gestión de clientes (CRM) + exportar a Excel</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Etiquetas e historial de conversaciones</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Usuarios para tu equipo con permisos</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Soporte técnico directo</div>
+          </div>
+          <a href="#" data-wa-link target="_blank" style="margin-top: auto; display: block; text-align: center; text-decoration: none; border: 1.5px solid #128C4B; color: #128C4B; font-weight: 700; padding: 12px; border-radius: 12px; font-size: 15px;" data-hover="background: #E7F8EE">Empezar</a>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid #E3EAE5; border-radius: 18px; padding: 28px 24px; display: flex; flex-direction: column;">
+          <p style="margin: 0 0 4px; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 16px;">Grande</p>
+          <p style="margin: 0 0 14px; color: #5B6E63; font-size: 13.5px;">Alto volumen de clientes</p>
+          <p style="margin: 0 0 14px;"><span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 40px; letter-spacing: -0.02em;">$449</span><span style="color: #5B6E63; font-size: 14px;">/mes</span></p>
+          <p style="margin: 0 0 14px; color: #33443B; font-size: 14px;">Hasta ~5.000 clientes atendidos al mes</p>
+          <div style="display: grid; gap: 10px; margin: 0 0 22px; font-size: 13.5px; color: #33443B; text-align: left;">
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Atención 24/7 con IA</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> API Oficial de WhatsApp Business</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Responde texto, notas de voz y fotos</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Catálogo con fotos y videos de productos</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Agenda de citas online</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Automatización de ventas con aviso a tu celular</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Reportes de ventas a tu WhatsApp</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Alertas inteligentes (stock, ventas, clientes en riesgo)</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Gestión de clientes (CRM) + exportar a Excel</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Etiquetas e historial de conversaciones</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Usuarios para tu equipo con permisos</div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#128C4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;"><path d="M20 6L9 17l-5-5"></path></svg> Soporte técnico directo</div>
+          </div>
+          <a href="#" data-wa-link target="_blank" style="margin-top: auto; display: block; text-align: center; text-decoration: none; border: 1.5px solid #128C4B; color: #128C4B; font-weight: 700; padding: 12px; border-radius: 12px; font-size: 15px;" data-hover="background: #E7F8EE">Empezar</a>
+        </div>
+      </div>
+      <p style="text-align: center; color: #5B6E63; font-size: 13.5px; margin: 24px auto 0; max-width: 560px;">Implementación y carga de catálogo por única vez: <strong style="color: #16241D;">$99</strong> (incluye personalización del bot y puesta en marcha).</p>
+      <p style="text-align: center; font-family: 'Sora', sans-serif; font-weight: 700; font-size: clamp(16px, 2.2vw, 19px); color: #128C4B; margin: 18px auto 0; max-width: 560px; text-wrap: pretty;">Si el bot te recupera 2 ventas o 3 citas al mes que hoy se pierden, ya se pagó solo.</p>
+    </div>
+  </section>
+
+  <!-- ============ 11. CTA FINAL ============ -->
+  <section data-screen-label="CTA final" style="padding: 72px 20px 80px;">
+    <div style="max-width: 900px; margin: 0 auto; background: linear-gradient(160deg, #0B1F16 0%, #0E2A1D 100%); color: #F2F7F4; border-radius: 28px; padding: clamp(36px, 6vw, 64px) clamp(24px, 5vw, 56px); text-align: center;">
+      <h2 style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: clamp(26px, 4vw, 42px); letter-spacing: -0.02em; margin: 0 0 16px; text-wrap: pretty;">Pide tu demo gratis</h2>
+      <p style="color: #C4D6CB; font-size: clamp(15px, 2vw, 18px); margin: 0 auto 30px; max-width: 560px; text-wrap: pretty;">Te mostramos el bot respondiendo <strong style="color: #F2F7F4;">con TU catálogo</strong> o agendando <strong style="color: #F2F7F4;">con TUS horarios</strong>. En una llamada corta, con tu negocio real.</p>
+      <a href="#" data-wa-link target="_blank" style="display: inline-flex; align-items: center; gap: 10px; background: #25D366; color: #07130D; text-decoration: none; font-family: 'Sora', sans-serif; font-weight: 800; font-size: clamp(16px, 2.4vw, 19px); padding: 18px 32px; border-radius: 16px; animation: bp-pulse 2.4s infinite;" data-hover="background: #3BE07A">
+        <span style="font-size: 22px;">💬</span> Escríbenos por WhatsApp
+      </a>
+      <p style="font-size: 13.5px; color: #8FAE9C; margin: 16px 0 0;">Sin compromiso · Sin tarjeta · En español</p>
+    </div>
+    <p style="text-align: center; color: #8CA095; font-size: 13px; margin: 40px 0 0;">BotPanel · Tu empleado digital en WhatsApp · Ecuador y Colombia</p>
+  </section>
+
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
