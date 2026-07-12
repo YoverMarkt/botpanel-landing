@@ -9,7 +9,7 @@
 /* ====== CONFIGURACIÓN — edita estos dos valores ====== */
 var CONFIG = {
   // Número de WhatsApp con código de país, solo dígitos (sin +, espacios ni guiones).
-  numeroWhatsApp: "593999999999",
+  numeroWhatsApp: "593991716574",
   // Mensaje que aparece prellenado al abrir el chat.
   mensajePrellenado: "Hola, quiero una demo gratis de BotPanel para mi negocio"
 };
